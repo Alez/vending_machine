@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Vending Machine</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Кошелёк пользователя</div>
+                    <div class="panel-body">
+                        <div><span class="insertOutput-js" data-nominal="1">1 руб = 10 штук</span> <input type="button" class="insert-js" data-nominal="1" value="Внести"></div>
+                        <div><span class="insertOutput-js" data-nominal="2">2 руб = 30 штук</span> <input type="button" class="insert-js" data-nominal="2" value="Внести"></div>
+                        <div><span class="insertOutput-js" data-nominal="5">5 руб = 20 штук</span> <input type="button" class="insert-js" data-nominal="5" value="Внести"></div>
+                        <div><span class="insertOutput-js" data-nominal="10">10 руб = 15 штук</span> <input type="button" class="insert-js" data-nominal="10" value="Внести"></div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">Кошелёк машины</div>
+                    <div class="panel-body">
+                        <div><span class="innerOutput-js" data-nominal="1">1 руб = 100 штук</span></div>
+                        <div><span class="innerOutput-js" data-nominal="2">2 руб = 100 штук</span></div>
+                        <div><span class="innerOutput-js" data-nominal="5">5 руб = 100 штук</span></div>
+                        <div><span class="innerOutput-js" data-nominal="10">10 руб = 100 штук</span></div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">Асортимент для продажи</div>
+                    <div class="panel-body">
+                        <div><span class="stock-js" data-name="Чай">Чай = 13 руб, 10 порций.</span> <input type="button" class="buy-js" data-name="Чай" value="Купить"></div>
+                        <div><span class="stock-js" data-name="Кофе">Кофе = 18 руб, 20 порций.</span> <input type="button" class="buy-js" data-name="Кофе" value="Купить"></div>
+                        <div><span class="stock-js" data-name="Кофе с молоком">Кофе с молоком = 21 руб, 20 порций.</span> <input type="button" class="buy-js" data-name="Кофе с молоком" value="Купить"></div>
+                        <div><span class="stock-js" data-name="Сок">Сок = 35 руб, 15 порций.</span> <input type="button" class="buy-js" data-name="Сок" value="Купить"></div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">Внесённая сумма</div>
+                    <div class="panel-body"><input type="text" value="0" readonly class="balance-js"><input type="button" value="Сдача" class="moneyBack-js"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="vm.js"></script>
+</body>
+</html>
